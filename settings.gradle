@@ -1,0 +1,5 @@
+rootProject.name = 'Discogs'
+include 'discogs-data'
+include 'discogs-config'
+include 'discogs-service'
+
