@@ -4,3 +4,4 @@ gradle/
 *.iml
 gradlew.bat
 gradlew
+.DS_Store
