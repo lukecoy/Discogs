@@ -1,0 +1,23 @@
+database:
+  driverClass: org.postgresql.Driver
+
+  user: discogs
+
+  password: ''
+
+  url: 'jdbc:postgresql://localhost:5432/discogs'
+
+  properties:
+    charSet: UTF-8
+
+  maxWaitForConnection: 1s
+
+  validationQuery: "/* MyService Health Check */ SELECT 1"
+
+  minSize: 8
+
+  maxSize: 32
+
+  checkConnectionWhileIdle: false
+
+

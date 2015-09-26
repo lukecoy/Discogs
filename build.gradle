@@ -1,12 +1,8 @@
-group 'com.lukecoy'
-version '1.0-SNAPSHOT'
-
 apply plugin: 'application'
-apply plugin: 'java'
 
-// mainClassName = ..
+mainClassName = 'com.lukecoy.discogs.service.DiscogsService'
 
-allProjects {
+allprojects {
     group = 'com.lukecoy'
     version = '1.0-SNAPSHOT'
 

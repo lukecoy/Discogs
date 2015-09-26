@@ -1,14 +1,4 @@
-group 'com.lukecoy'
-version '1.0-SNAPSHOT'
-
-apply plugin: 'java'
-
-sourceCompatibility = 1.5
-
-repositories {
-    mavenCentral()
-}
-
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile group: 'io.dropwizard', name: 'dropwizard-jdbi', version: '0.8.2'
+    compile group: 'org.postgresql', name: 'postgresql', version: '9.4-1203-jdbc42'
 }
