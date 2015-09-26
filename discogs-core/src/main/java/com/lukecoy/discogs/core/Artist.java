@@ -1,17 +1,21 @@
 package com.lukecoy.discogs.core;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Artist {
 
     private final String name;
-    private final int[] releases;
-    private final String dataQuality;
+    private final String profile;
+    private final long id;
 
-    public Artist(String name, int[] releases, String dataQuality) {
+    @JsonCreator
+    public Artist(@JsonProperty("name") String name,
+                  @JsonProperty("profile") String profile,
+                  @JsonProperty("id") long id) {
         this.name = name;
-        this.releases = releases;
-        this.dataQuality = dataQuality;
+        this.profile = profile;
+        this.id = id;
     }
 
     @JsonProperty
@@ -20,13 +24,13 @@ public class Artist {
     }
 
     @JsonProperty
-    public int[] getReleases() {
-        return releases;
+    public String getProfile() {
+        return profile;
     }
 
     @JsonProperty
-    public String getDataQuality() {
-        return dataQuality;
+    public long getId() {
+        return id;
     }
 
 }

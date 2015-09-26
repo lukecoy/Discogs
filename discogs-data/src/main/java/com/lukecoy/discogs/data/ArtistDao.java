@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface ArtistDao {
 
-    @SqlQuery("SELECT name, releases, data_quality FROM artist WHERE UPPER(name)=UPPER(:name)")
+    @SqlQuery("SELECT name, profile, id FROM artist WHERE UPPER(name)=UPPER(:name)")
     public List<Artist> getArtist(@Bind("name") String name);
 
 }

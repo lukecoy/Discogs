@@ -1,9 +1,9 @@
 database:
   driverClass: org.postgresql.Driver
 
-  user: discogs
+  user: read_only
 
-  password: ''
+  password: 'password'
 
   url: 'jdbc:postgresql://localhost:5432/discogs'
 
